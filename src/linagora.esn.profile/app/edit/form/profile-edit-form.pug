@@ -1,0 +1,59 @@
+.card
+  .card-header
+    h2 {{ 'Basic information' | translate }}
+  .card-body.card-padding
+    ng-form(name="form")
+      esn-form-group(label="{{ 'First Name' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.firstname'
+          ng-disabled="$ctrl.provisionedFields.indexOf('firstname') !== -1"
+        )
+      esn-form-group(label="{{ 'Last Name' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.lastname'
+          ng-disabled="$ctrl.provisionedFields.indexOf('lastname') !== -1"
+        )
+      esn-form-group(label="{{ 'Job Title' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.job_title'
+          ng-disabled="$ctrl.provisionedFields.indexOf('job_title') !== -1"
+        )
+      esn-form-group(label="{{ 'Service' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.service'
+          ng-disabled="$ctrl.provisionedFields.indexOf('service') !== -1"
+        )
+      esn-form-group(label="{{ 'Building Location' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.building_location'
+          ng-disabled="$ctrl.provisionedFields.indexOf('building_location') !== -1"
+        )
+      esn-form-group(label="{{ 'Office Location' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.office_location'
+          ng-disabled="$ctrl.provisionedFields.indexOf('office_location') !== -1"
+        )
+      esn-form-group(label="{{ 'Main Phone' | translate }}")
+        input.form-control(
+          type='text'
+          ng-model='$ctrl.user.main_phone'
+          ng-disabled="$ctrl.provisionedFields.indexOf('main_phone') !== -1"
+        )
+      esn-form-group(label="{{ 'Bio' | translate }}")
+        textarea.form-control(
+          rows="3"
+          type='text'
+          ng-model='$ctrl.user.description'
+          ng-disabled="$ctrl.provisionedFields.indexOf('description') !== -1"
+        )
+.card(ng-if="$ctrl.canEditEmails")
+  .card-header
+    h2 {{ 'Emails' | translate }}
+  .card-body.card-padding
+    profile-edit-email(user="$ctrl.user")

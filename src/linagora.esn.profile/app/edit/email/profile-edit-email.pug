@@ -1,0 +1,32 @@
+ng-form(name="form")
+  .row(ng-repeat="email in $ctrl.user.emails")
+    .col-xs-8
+      p {{email}}
+    .col-xs-4
+      span.badge(ng-if="email===$ctrl.user.preferredEmail")
+        | Primary
+      i.mdi.mdi-delete.clickable(ng-if="email!==$ctrl.user.preferredEmail", ng-click="$ctrl.onDeleteBtnClick(email, form)")
+  .row.m-t-20
+    .col-xs-5
+      esn-form-group(
+        label="{{ 'Add email address' | translate }}",
+        form="form",
+        validator-error-message="{{ 'Email is invalid' | translate }}",
+        validator="$ctrl.emailValidator"
+        async-validator-error-message="{{ 'Email is already in use. Try another.' | translate }}",
+        async-validator="$ctrl.checkEmailAvailability"
+      )
+        input.form-control.fg-input(
+          ng-model="$ctrl.newEmailLocalPart",
+          name="newEmailLocalPart",
+          autocomplete="off",
+          ng-model-options="{ debounce: {'default': 300} }"
+        )
+    .col-xs-3.m-t-15.p-l-0
+      span.ellipsis(title="{{::$ctrl.domainName}}")
+        | @{{::$ctrl.domainName}}
+    .col-xs-4.m-t-10
+      button.btn.btn-primary.btn-sm.waves-effect(
+        ng-disabled="!$ctrl.newEmailLocalPart || form.$invalid",
+        ng-click="$ctrl.onAddBtnClick()"
+      ) {{ 'Add' | translate }}

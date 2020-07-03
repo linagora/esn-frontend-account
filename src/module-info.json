@@ -1,0 +1,38 @@
+{
+  "coreModules": [
+    {
+      "name": "linagora.esn.controlcenter",
+      "angularModuleName": "linagora.esn.controlcenter",
+      "shortName": "controlcenter",
+      "frontendRoot": "frontend",
+      "cssRoot": "frontend/app/app.less",
+      "fileRoot": "frontend/app",
+      "pugGlob": [
+        "**/*.pug"
+      ],
+      "pugOptions": {
+        "basedir": "./node_modules/esn-frontend-common-libs/src/frontend/views"
+      },
+      "filesGlob": [
+        "**/*.module.js",
+        "**/!(*spec).js"
+      ]
+    },
+    {
+      "name": "linagora.esn.profile",
+      "angularModuleName": "linagora.esn.profile",
+      "shortName": "profile",
+      "pugGlob": [
+        "**/*.pug"
+      ],
+      "pugOptions": {
+        "basedir": "./node_modules/esn-frontend-common-libs/src/frontend/views"
+      },
+      "fileRoot": "frontend/app",
+      "filesGlob": [
+        "**/*.module.js",
+        "**/!(*spec).js"
+      ]
+    }
+  ]
+}

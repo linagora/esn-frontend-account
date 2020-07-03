@@ -1,0 +1,16 @@
+.profile-tabs
+  ul.esn-tab
+    li.btn-wave(ui-sref-active="active")
+      a(href="", ui-sref="profile.details.view", ui-sref-opts="{location: 'replace'}")
+        | {{ 'Profile' | translate }}
+    li.btn-wave(ui-sref-active="active", dynamic-directive="profile-tabs")
+    li.btn-wave(ui-sref-active="active")
+      a(href="", ui-sref="profile.details.followers", ui-sref-opts="{location: 'replace'}")
+        | {{ 'Followers' | translate }} ({{$ctrl.user.followers}})
+    li.btn-wave(ui-sref-active="active")
+      a(href="", ui-sref="profile.details.followings", ui-sref-opts="{location: 'replace'}")
+        | {{ 'Followings' | translate }} ({{$ctrl.user.followings}})
+    li.btn-wave(ng-if="$ctrl.me", ui-sref-active="active")
+      a(href="", ui-sref="profile.details.timeline", ui-sref-opts="{location: 'replace'}")
+        | {{ 'Timeline' | translate }}
+.ui-view(name="details")

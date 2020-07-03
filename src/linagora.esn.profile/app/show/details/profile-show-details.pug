@@ -1,0 +1,56 @@
+sub-header
+  profile-show-details-subheader(show-edit-button="$ctrl.canEdit")
+
+.pmb-block
+  .pmbb-header
+    h2
+      i.mdi.mdi-account.m-r-5
+      | {{ 'Profile Informations' | translate }}
+  .pmbb-body.p-l-30
+    .pmbb-view
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-email.m-r-5
+          | {{ 'Email' | translate }}
+          dd(ng-repeat="email in $ctrl.user.emails track by $index")
+            a(
+              ng-href="mailto:{{email}}",
+              op-inbox-compose,
+              op-inbox-compose-users="[$ctrl.user]"
+            ) {{email}}
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-phone.m-r-5
+          | {{ 'Phone' | translate }}
+        dd
+          | {{$ctrl.user.main_phone}}
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-store.m-r-5
+          | {{ 'Service' | translate }}
+          dd
+            | {{$ctrl.user.service}}
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-briefcase.m-r-5
+          | {{ 'Job Title' | translate }}
+          dd
+            | {{$ctrl.user.job_title}}
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-city.m-r-5
+          | {{ 'Building Location' | translate }}
+          dd
+            | {{$ctrl.user.building_location}}
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-monitor.m-r-5
+          | {{ 'Office Location' | translate }}
+          dd
+            | {{$ctrl.user.office_location}}
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-account.m-r-5
+          | {{ 'Bio' | translate }}
+          dd
+            | {{$ctrl.user.description}}

@@ -1,0 +1,16 @@
+.profile-overview
+  .po-card
+    .pmo-pic
+      .p-relative.po-card-image(ng-controller='avatarController')
+        a
+          esn-avatar(avatar-url="avatarURL", hide-user-status="true")
+        a.edit-h(ng-controller='avatarEdit', href='', ng-click="showAvatarEditModal()", ng-if="::$ctrl.canEdit" )
+          i.mdi.mdi-camera
+          span
+            | {{ 'Update Profile Picture' | translate }}
+    .po-card-text
+      user-profile-link.po-displayname.ellipsis(user="$ctrl.user")
+      span.m-0.c-white.ellipsis {{::$ctrl.user.job_title}}
+  .po-information(ng-if='!$ctrl.me')
+    follow-card(user='$ctrl.user')
+    .profile-user-actions(dynamic-directive="profile-user-actions")

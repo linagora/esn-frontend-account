@@ -1,0 +1,7 @@
+extends /modules/subheader/responsive-subheader.pug
+
+block left
+  span.title.ellipsis {{ 'General' | translate }}
+
+block right
+  esn-subheader-save-button(on-click="$ctrl.onFormSubmit()", form="$ctrl.form")

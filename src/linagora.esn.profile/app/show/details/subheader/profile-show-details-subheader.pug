@@ -1,0 +1,15 @@
+extends /modules/subheader/responsive-subheader.pug
+
+block left
+  button.btn.btn-link.btn-icon(esn-back-button='home', title="{{ 'Back' | translate }}")
+    i.mdi.mdi-arrow-left
+  span.title.ellipsis
+    |  {{ 'Profile' | translate }}
+
+block right
+  button.btn.btn-link.hidden-xs(ng-if="$ctrl.showEditButton", ui-sref="profile.details.edit", ui-sref-opts="{location: 'replace'}")
+    .flex-vertical-centered
+      i.mdi.mdi-pencil.mdi-margin-right
+      span {{ 'Edit' | translate }}
+  button.btn.btn-link.btn-icon.visible-xs(ng-if="$ctrl.showEditButton", ui-sref="profile.details.edit", ui-sref-opts="{location: 'replace'}")
+    i.mdi.mdi-pencil
