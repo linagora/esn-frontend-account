@@ -1,3 +1,5 @@
+require ('../../common/profile-api.service.js');
+
 (function(angular) {
   'use strict';
 

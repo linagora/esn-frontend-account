@@ -1,3 +1,6 @@
+require('../common/profile-api.service.js')
+const _ = require('lodash');
+
 (function(angular) {
   'use strict';
 
@@ -10,7 +13,6 @@
     esnConfigApi,
     esnConfig,
     esnUserConfigurationService,
-    _,
     session,
     userAPI,
     profileAPI,

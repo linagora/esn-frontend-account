@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 (function() {
   'use strict';
 
@@ -10,7 +12,6 @@
     esnUserConfigurationService,
     asyncAction,
     homePageService,
-    _,
     ESN_ROUTER_DEFAULT_HOME_PAGE,
     CONTROLCENTER_GENERAL_CONFIGS
   ) {
