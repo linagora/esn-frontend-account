@@ -1,3 +1,5 @@
+require('./profile-helpers.service.js');
+
 (function(angular) {
   'use strict';
 

@@ -1,6 +1,9 @@
-'use strict';
+require('./menu-template-builder.service.js');
 
-angular.module('linagora.esn.controlcenter')
+(function(angular){
+  'use strict';
+
+  angular.module('linagora.esn.controlcenter')
 
   .directive('controlcenterApplicationMenu', function(applicationMenuTemplateBuilder) {
     return {
@@ -18,3 +21,4 @@ angular.module('linagora.esn.controlcenter')
       template: controlCenterMenuTemplateBuilder(href, icon, label)
     };
   });
+})(angular);

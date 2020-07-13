@@ -1,51 +1,5 @@
-
 require('esn-frontend-common-libs/src/index.js');
-
-
 require('./require-angular-injections.js');
-
-require ('./linagora.esn.controlcenter/app/app.module.js');
-require ('./linagora.esn.controlcenter/app/app.route.js');
-require ('./linagora.esn.controlcenter/app/app.run.js');
-require ('./linagora.esn.controlcenter/app/application-menu-home/application-menu-home.directive.js');
-require ('./linagora.esn.controlcenter/app/common/application-menu.directive.js');
-require ('./linagora.esn.controlcenter/app/common/menu-template-builder.service.js');
-require ('./linagora.esn.controlcenter/app/general/controlcenter-general.component.js');
-require ('./linagora.esn.controlcenter/app/general/controlcenter-general.constants.js');
-require ('./linagora.esn.controlcenter/app/general/controlcenter-general.controller.js');
-require ('./linagora.esn.controlcenter/app/general/subheader/subheader.js');
-require ('./linagora.esn.controlcenter/app/profile-menu-controlcenter/profile-menu-controlcenter.component.js');
-require ('./linagora.esn.controlcenter/app/sidebar/sidebar-menu-item.component.js');
-require ('./linagora.esn.controlcenter/app/sidebar/sidebar.component.js');
-require ('./linagora.esn.profile/app/app.module.js');
-require ('./linagora.esn.profile/app/app.constants.js');
-require ('./linagora.esn.profile/app/app.registry.run.js');
-require ('./linagora.esn.profile/app/app.routes.js');
-require ('./linagora.esn.profile/app/app.run.js');
-require ('./linagora.esn.profile/app/common/profile-api.service.js');
-require ('./linagora.esn.profile/app/common/profile-helpers.service.js');
-require ('./linagora.esn.profile/app/common/profile.controller.js');
-require ('./linagora.esn.profile/app/edit/email/profile-edit-emai.component.js');
-require ('./linagora.esn.profile/app/edit/email/profile-edit-email.controller.js');
-require ('./linagora.esn.profile/app/edit/form/profile-edit-form.component.js');
-require ('./linagora.esn.profile/app/edit/profile-edit.component.js');
-require ('./linagora.esn.profile/app/edit/profile-edit.controller.js');
-require ('./linagora.esn.profile/app/edit/subheader/profile-edit-subheader.component.js');
-require ('./linagora.esn.profile/app/profile-menu-profile/profile-menu-profile.component.js');
-require ('./linagora.esn.profile/app/show/details/profile-show-details.component.js');
-require ('./linagora.esn.profile/app/show/details/profile-show-details.controller.js');
-require ('./linagora.esn.profile/app/show/details/subheader/profile-show-details-subheader.component.js');
-require ('./linagora.esn.profile/app/show/follower/profile-show-follower.component.js');
-require ('./linagora.esn.profile/app/show/follower/profile-show-follower.controller.js');
-require ('./linagora.esn.profile/app/show/follower/subheader/profile-show-follower-subheader.component.js');
-require ('./linagora.esn.profile/app/show/following/profile-show-following.component.js');
-require ('./linagora.esn.profile/app/show/following/profile-show-following.controller.js');
-require ('./linagora.esn.profile/app/show/following/subheader/profile-show-following-subheader.component.js');
-require ('./linagora.esn.profile/app/show/overview/profile-overview.component.js');
-require ('./linagora.esn.profile/app/show/overview/profile-overview.controller.js');
-require ('./linagora.esn.profile/app/show/profile-show.component.js');
-require ('./linagora.esn.profile/app/show/tabs/profile-tabs.component.js');
-require ('./linagora.esn.profile/app/show/tabs/profile-tabs.controller.js');
-require ('./linagora.esn.profile/app/show/timeline/profile-show-timeline.component.js');
-require ('./linagora.esn.profile/app/show/timeline/subheader/profile-show-timeline-subheader.component.js');
+require('./linagora.esn.controlcenter/app/app.module.js');
+require('./linagora.esn.profile/app/app.module.js');
 require('./all.less');
