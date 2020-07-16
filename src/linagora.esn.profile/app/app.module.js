@@ -16,6 +16,7 @@ require('esn-frontend-common-libs/src/frontend/js/modules/user-configuration/use
   'use strict';
 
   angular.module('linagora.esn.profile', [
+    'esn.mailto-handler',
     'esn.core',
     'esn.configuration',
     'ui.router',
