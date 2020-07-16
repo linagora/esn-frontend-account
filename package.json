@@ -11,7 +11,8 @@
   "author": "",
   "license": "AGPLv3",
   "dependencies": {
-    "esn-frontend-common-libs": "openpaas-suite/esn-frontend-common-libs#main"
+    "esn-frontend-common-libs": "openpaas-suite/esn-frontend-common-libs#main",
+    "esn-frontend-mailto-handler": "github:openpaas-suite/esn-frontend-mailto-handler#main"
   },
   "devDependencies": {
     "css-loader": "^3.6.0",
