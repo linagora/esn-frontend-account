@@ -1,4 +1,3 @@
-require('esn-frontend-common-libs/src/frontend/js/modules/esn.router.js');
 require('esn-frontend-common-libs/src/frontend/js/constants.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/header/header.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/user/user.module.js');
@@ -17,7 +16,6 @@ require('esn-frontend-common-libs/src/frontend/js/modules/application-menu.js');
   angular.module('linagora.esn.controlcenter', [
     'op.dynamicDirective',
     'esn.constants',
-    'esn.router',
     'esn.user',
     'esn.subheader',
     'esn.sidebar',
