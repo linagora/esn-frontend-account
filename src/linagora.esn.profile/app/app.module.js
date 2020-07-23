@@ -11,6 +11,7 @@ require('esn-frontend-common-libs/src/frontend/js/modules/availability/availabil
 require('esn-frontend-common-libs/src/frontend/js/modules/user/user.module.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/config/config.module.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/user-configuration/user-configuration.module.js');
+require('esn-frontend-account-inbox/src/app/app.module.js');
 
 (function(angular) {
   'use strict';
@@ -32,7 +33,8 @@ require('esn-frontend-common-libs/src/frontend/js/modules/user-configuration/use
     'esn.async-action',
     'esn.availability',
     'esn.module-registry',
-    'esn.user-configuration'
+    'esn.user-configuration',
+    'esn-frontend-account-inbox'
   ]);
 })(angular);
 
