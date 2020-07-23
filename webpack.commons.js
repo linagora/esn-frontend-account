@@ -2,6 +2,7 @@ const path = require('path');
 const { accessSync } = require('fs');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const commonLibsPath = path.resolve(__dirname, 'node_modules', 'esn-frontend-common-libs');
 const angularCommon = path.resolve(__dirname, 'node_modules', 'esn-frontend-common-libs', 'src', 'angular-common.js');
@@ -50,6 +51,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './assets/index.pug',
       filename: './index.html'
+    }),
+    new FaviconsWebpackPlugin({
+      logo: './src/linagora.esn.controlcenter/images/control-center-icon.svg',
+      prefix: 'account-assets/',
     }),
   ],
   devServer: {
