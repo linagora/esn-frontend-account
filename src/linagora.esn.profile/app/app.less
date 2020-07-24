@@ -1,10 +1,22 @@
 @import './edit/email/profile-edit-email';
 @import './edit/profile-edit';
+@import './sidebar/sidebar';
 
 @profileButtonColor: rgba(0, 0, 0, 0.04);
 @profileButtonHoverColor: rgba(0, 0, 0, 0.102);
 
 #profile-main {
+
+  .pm-body {
+    padding-left: 0;
+  }
+
+  .pmo-pic img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+  }
 
   .profile-overview .po-information button {
     background-color: @profileButtonColor;
@@ -57,12 +69,6 @@
       width: @avatarMaxSize;
     }
   }
-
-  @media (min-width: @screen-xs-max) {
-    .pm-body {
-      padding-left: @avatarMaxSize;
-    }
-  }
 }
 .modal-profile-avatar {
   .select-image {
@@ -104,11 +110,9 @@
     color: #fff;
     background: rgba(0, 0, 0, 0.38);
     text-align: center;
-    border-radius: 0 0 3px 3px;
-    padding: 10px 10px 11px;
+    padding: 5px;
     .transition(opacity);
     .transition-duration(250ms);
-    margin-top: 20px;
     &.lv-img-sm {
       margin-top: 0px;
     }
@@ -127,9 +131,17 @@
     .flex;
     align-items: stretch;
     flex-direction: column;
-    .po-card-image img {
+    .po-card-image {
+      border-radius: 50%;
+      overflow: hidden;
+      display: block;
+      width: 60px;
+      height: 60px;
+
+     img {
       align-self: center;
       width: 100%;
+     }
     }
     .po-card-text {
       background-color: @accentColor;
@@ -165,7 +177,8 @@
 }
 
 dl {
-  height: 2em;
+  height: auto;
+
   dd {
     & > a.edit-hint {
       display: none;
@@ -232,9 +245,5 @@ dl {
 @media (max-width: @screen-xs-max) {
   .modal-profile-avatar {
     width: 100vw;
-  }
-
-  .profile-overview .po-card .avatar-with-bubble {
-    padding: 20px;
   }
 }

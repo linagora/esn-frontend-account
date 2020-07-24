@@ -1,0 +1,57 @@
+.controlcenter-sidebar {
+  margin-top: @sidebarMarginTop;
+  max-width: 300px;
+
+  .listview .lv-item {
+    .flex-vertical-centered;
+
+    color: @secondaryTextColor;
+
+    &.menu-heading {
+      border-left: 5px solid @primaryColor;
+      color: @primaryColor;
+      font-size: @menuHeadingFontSize;
+      font-weight: bold;
+      padding: 8px 0 8px 15px;
+
+      .menu-title {
+        margin-left: 5px;
+      }
+    }
+
+    &.menu-item {
+      font-size: @menuItemFontSize;
+      padding: 8px 0 8px 23px;
+
+      .mdi {
+        color: lighten(@secondaryTextColor, 10%);
+      }
+
+      .menu-title {
+        margin-left: 10px;
+      }
+    }
+
+    .mdi {
+      font-size: @menuIconSize;
+    }
+
+  }
+
+  profile-sidebar-menu-item {
+    display: block;
+
+    &.selected {
+      background-color: @darkenBgColor;
+    }
+  }
+
+  hr {
+    margin: 10px 0;
+  }
+
+  .listview a.lv-item:hover {
+    color: @secondaryTextColor;
+    background-color: @darkenBgColor;
+  }
+}
