@@ -2,7 +2,8 @@
   ul.nav.nav-pills.nav-stacked
     .listview
       .lv-body(dynamic-directive='controlcenter-sidebar-menu')
-        .lv-item.clickable.menu-heading(ui-sref="controlcenter")
-          i.mdi.mdi-settings
-          .menu-title {{ 'Control Center' | translate }}
-        controlcenter-sidebar-menu-item(icon="mdi-wrench", ui-sref="controlcenter.general", ui-sref-active="selected", label="{{ 'General' | translate }}")
+        .lv-item.menu-heading
+          i.mdi.mdi-account-settings-variant
+          .menu-title {{ 'Account' | translate }}
+        controlcenter-sidebar-menu-item(icon="mdi-account", ui-sref="profile", ui-sref-active="selected", label="{{ 'Profile' | translate }}")
+        controlcenter-sidebar-menu-item(icon="mdi-settings", ui-sref="controlcenter.general", ui-sref-active="selected", label="{{ 'Settings' | translate }}")
