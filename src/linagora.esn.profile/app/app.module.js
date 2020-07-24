@@ -62,6 +62,8 @@ require('./show/tabs/profile-tabs.component.js');
 require('./show/tabs/profile-tabs.controller.js');
 require('./show/timeline/profile-show-timeline.component.js');
 require('./show/timeline/subheader/profile-show-timeline-subheader.component.js');
+require('./sidebar/sidebar.component.js');
+require('./sidebar/sidebar-menu-item.component.js');
 require('./app.constants.js');
 require('./app.registry.run.js');
 require('./app.routes.js');
