@@ -58,14 +58,15 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    contentBasePublicPath: BASE_HREF,
+    contentBase: [path.join(__dirname, 'dist'), path.resolve(__dirname, 'node_modules', 'esn-frontend-login', 'dist')],
+    contentBasePublicPath: [BASE_HREF, '/login'],
     compress: true,
     port: 9900,
     proxy: [{
       context: [
         '/auth',
         '/api',
+        '/login',
         '/views',
         '/account/api',
         '/profile/app',
@@ -87,6 +88,7 @@ module.exports = {
       disableHostCheck: true,
       secure: false,
       changeOrigin: true,
+      withCredentials: true
     }]
   },
   module: {
