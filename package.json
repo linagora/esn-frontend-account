@@ -14,6 +14,7 @@
   "author": "",
   "license": "AGPLv3",
   "dependencies": {
+    "dotenv-webpack": "^2.0.0",
     "esn-frontend-common-libs": "openpaas-suite/esn-frontend-common-libs#main",
     "esn-frontend-mailto-handler": "github:openpaas-suite/esn-frontend-mailto-handler#main"
   },
