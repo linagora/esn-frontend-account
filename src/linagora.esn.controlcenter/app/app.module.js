@@ -30,7 +30,6 @@ require('esn-frontend-common-libs/src/frontend/js/modules/application-menu.js');
 
 })(angular);
 
-require('./application-menu-home/application-menu-home.directive.js');
 require('./common/application-menu.directive.js');
 require('./common/menu-template-builder.service.js');
 require('./general/controlcenter-general.component.js');
