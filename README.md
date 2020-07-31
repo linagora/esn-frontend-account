@@ -4,7 +4,7 @@ User account application for OpenPaaS
 
 ## Development
 
-## Configuration
+### Configuration
 
 First, you want to ensure that the application grid component is provided with the necessary information about the apps via the environment variable `APP_GRID_ITEMS`:
 
