@@ -42,3 +42,5 @@ require('./sidebar/sidebar-menu-item.component.js');
 require('./sidebar/sidebar.component.js');
 require('./app.route.js');
 require('./app.run.js');
+require('./app.config.js');
+

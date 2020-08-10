@@ -66,3 +66,5 @@ require('./app.constants.js');
 require('./app.registry.run.js');
 require('./app.routes.js');
 require('./app.run.js');
+require('./app.config.js');
+
