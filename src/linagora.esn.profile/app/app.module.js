@@ -32,6 +32,7 @@ angular.module('linagora.esn.profile', [
   'esn.availability',
   'esn.module-registry',
   'esn.user-configuration',
+  'materialAdmin'
 ]);
 
 require('./common/profile-api.service.js');
