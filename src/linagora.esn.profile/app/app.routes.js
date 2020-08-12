@@ -55,7 +55,8 @@
             'details@profile.details': {
               template: '<profile-show-details user="user" />'
             }
-          }
+          },
+          default: true
         })
         .state('profile.details.followers', {
           url: '/followers',
