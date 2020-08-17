@@ -1,3 +1,5 @@
+'use strict';
+
 require('esn-frontend-common-libs/src/frontend/js/modules/core.js');
 require('esn-frontend-common-libs/src/frontend/components/dynamic-directive/src/dynamic-directive.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/http.js');
@@ -11,30 +13,28 @@ require('esn-frontend-common-libs/src/frontend/js/modules/availability/availabil
 require('esn-frontend-common-libs/src/frontend/js/modules/user/user.module.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/config/config.module.js');
 require('esn-frontend-common-libs/src/frontend/js/modules/user-configuration/user-configuration.module.js');
+require('esn-frontend-account-inbox/src/app/app.module.js');
 
-(function(angular) {
-  'use strict';
-
-  angular.module('linagora.esn.profile', [
-    'esn.mailto-handler',
-    'esn.core',
-    'esn.configuration',
-    'ui.router',
-    'op.dynamicDirective',
-    'esn.http',
-    'esn.user',
-    'esn.session',
-    'esn.profile',
-    'esn.notification',
-    'esn.timeline',
-    'esn.previous-page',
-    'esn.i18n',
-    'esn.async-action',
-    'esn.availability',
-    'esn.module-registry',
-    'esn.user-configuration'
-  ]);
-})(angular);
+angular.module('linagora.esn.profile', [
+  'esn.mailto-handler',
+  'esn.core',
+  'esn.configuration',
+  'ui.router',
+  'op.dynamicDirective',
+  'esn.http',
+  'esn.user',
+  'esn.session',
+  'esn.profile',
+  'esn.notification',
+  'esn.timeline',
+  'esn.previous-page',
+  'esn.i18n',
+  'esn.async-action',
+  'esn.availability',
+  'esn.module-registry',
+  'esn.user-configuration',
+  'esn.account-inbox'
+]);
 
 require('./common/profile-api.service.js');
 require('./common/profile-helpers.service.js');

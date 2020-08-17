@@ -80,7 +80,15 @@
               template: '<profile-show-timeline />'
             }
           }
-        });
+        })
+         .state('profile.details.identities', {
+           url: '/identities',
+           views: {
+             'details@profile.details': {
+               template: '<inbox-identities user="user" />'
+             }
+           }
+         });
     });
 
 })(angular);

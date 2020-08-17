@@ -3,7 +3,10 @@
     li.btn-wave(ui-sref-active="active")
       a(href="", ui-sref="profile.details.view", ui-sref-opts="{location: 'replace'}")
         | {{ 'Profile' | translate }}
+
     li.btn-wave(ui-sref-active="active", dynamic-directive="profile-tabs")
+      identities-tab(ng-if="$ctrl.canEdit")
+    
     li.btn-wave(ui-sref-active="active")
       a(href="", ui-sref="profile.details.followers", ui-sref-opts="{location: 'replace'}")
         | {{ 'Followers' | translate }} ({{$ctrl.user.followers}})
