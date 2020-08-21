@@ -1,17 +1,14 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.profile')
-    .controller('profileOverviewController', profileOverviewController);
+angular.module('linagora.esn.profile')
+  .controller('profileOverviewController', profileOverviewController);
 
-  function profileOverviewController($scope) {
-    var self = this;
+function profileOverviewController($scope) {
+  var self = this;
 
-    self.$onInit = $onInit;
+  self.$onInit = $onInit;
 
-    function $onInit() {
-      $scope.user = self.user;
-    }
+  function $onInit() {
+    $scope.user = self.user;
   }
-
-})(angular);
+}

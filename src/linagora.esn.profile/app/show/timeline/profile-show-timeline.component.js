@@ -1,8 +1,6 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.profile')
-    .component('profileShowTimeline', {
-      template: require("./profile-show-timeline.pug")
-    });
-})(angular);
+angular.module('linagora.esn.profile')
+  .component('profileShowTimeline', {
+    template: require("./profile-show-timeline.pug")
+  });

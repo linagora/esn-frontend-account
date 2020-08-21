@@ -1,17 +1,15 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.profile')
-    .controller('profileTabsController', profileTabsController);
+angular.module('linagora.esn.profile')
+  .controller('profileTabsController', profileTabsController);
 
-  function profileTabsController($scope) {
-    var self = this;
+function profileTabsController($scope) {
+  var self = this;
 
-    self.$onInit = $onInit;
+  self.$onInit = $onInit;
 
-    function $onInit() {
-      // because of scope inheritance...
-      $scope.user = self.user;
-    }
+  function $onInit() {
+    // because of scope inheritance...
+    $scope.user = self.user;
   }
-})(angular);
+}

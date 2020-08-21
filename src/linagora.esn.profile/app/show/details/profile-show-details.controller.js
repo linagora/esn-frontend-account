@@ -1,18 +1,16 @@
+'use strict';
+
 require ('../../common/profile-api.service.js');
 
-(function(angular) {
-  'use strict';
+angular.module('linagora.esn.profile')
+  .controller('profileShowDetailsController', profileShowDetailsController);
 
-  angular.module('linagora.esn.profile')
-    .controller('profileShowDetailsController', profileShowDetailsController);
+function profileShowDetailsController(profileHelpersService) {
+  var self = this;
 
-  function profileShowDetailsController(profileHelpersService) {
-    var self = this;
+  self.$onInit = $onInit;
 
-    self.$onInit = $onInit;
-
-    function $onInit() {
-      self.canEdit = profileHelpersService.canEdit(self.user);
-    }
+  function $onInit() {
+    self.canEdit = profileHelpersService.canEdit(self.user);
   }
-})(angular);
+}

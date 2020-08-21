@@ -1,14 +1,12 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.profile')
-    .component('profileOverview', {
-      template: require("./profile-overview.pug"),
-      controller: 'profileOverviewController',
-      bindings: {
-        user: '<',
-        me: '<',
-        canEdit: '<'
-      }
-    });
-})(angular);
+angular.module('linagora.esn.profile')
+  .component('profileOverview', {
+    template: require("./profile-overview.pug"),
+    controller: 'profileOverviewController',
+    bindings: {
+      user: '<',
+      me: '<',
+      canEdit: '<'
+    }
+  });
