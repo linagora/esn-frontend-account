@@ -15,7 +15,7 @@ describe('The ProfileEditEmailController', function() {
 
     domain = { name: 'bar' };
 
-    inject(function(
+    angular.mock.inject(function(
       _$rootScope_,
       _$controller_,
       _session_,
@@ -226,7 +226,7 @@ describe('The ProfileEditEmailController', function() {
   describe('The emailValidator method', function() {
     var emailService;
 
-    beforeEach(inject(function(_emailService_) {
+    beforeEach(angular.mock.inject(function(_emailService_) {
       emailService = _emailService_;
     }));
 

@@ -9,7 +9,7 @@ describe('The profileController', function() {
   var user, sessionUserMock;
 
   beforeEach(function() {
-    module('linagora.esn.profile');
+    angular.mock.module('linagora.esn.profile');
 
     user = {
       _id: '123'
@@ -18,7 +18,7 @@ describe('The profileController', function() {
       _id: '324'
     };
 
-    inject(function(_session_, _profileHelpersService_) {
+    angular.mock.inject(function(_session_, _profileHelpersService_) {
       session = _session_;
       profileHelpersService = _profileHelpersService_;
 

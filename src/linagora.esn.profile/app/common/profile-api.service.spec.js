@@ -8,9 +8,9 @@ describe('The profileAPI service', function() {
   var $httpBackend, profileApi;
 
   beforeEach(function() {
-    module('linagora.esn.profile');
+    angular.mock.module('linagora.esn.profile');
 
-    inject(function(_$httpBackend_, _profileAPI_) {
+    angular.mock.inject(function(_$httpBackend_, _profileAPI_) {
       $httpBackend = _$httpBackend_;
       profileApi = _profileAPI_;
     });

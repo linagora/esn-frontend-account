@@ -9,14 +9,15 @@ describe('The controlCenterMenuTemplateBuilder service', function() {
   var controlCenterMenuTemplateBuilder, featureFlags;
 
   beforeEach(function() {
-    module('linagora.esn.controlcenter');
+    angular.mock.module('ui.router');
+    angular.mock.module('linagora.esn.controlcenter');
 
-    inject(function(_featureFlags_) {
+    angular.mock.inject(function(_featureFlags_) {
       featureFlags = _featureFlags_;
     });
   });
 
-  beforeEach(inject(function(_controlCenterMenuTemplateBuilder_) {
+  beforeEach(angular.mock.inject(function(_controlCenterMenuTemplateBuilder_) {
     controlCenterMenuTemplateBuilder = _controlCenterMenuTemplateBuilder_;
   }));
 

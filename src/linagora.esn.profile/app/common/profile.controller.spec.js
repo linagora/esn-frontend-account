@@ -14,7 +14,7 @@ describe('The profileController', function() {
   beforeEach(function() {
     angular.mock.module('linagora.esn.profile');
 
-    inject(function(_$rootScope_, _$controller_, _profileHelpersService_) {
+    angular.mock.inject(function(_$rootScope_, _$controller_, _profileHelpersService_) {
       $rootScope = _$rootScope_;
       $controller = _$controller_;
       profileHelpersService = _profileHelpersService_;
