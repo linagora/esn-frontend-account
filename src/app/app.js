@@ -12,8 +12,9 @@ angular.module('esnApp', [
     });
   });
 
-
 require('esn-frontend-common-libs/src/frontend/js/modules/websocket');
 require('esn-frontend-common-libs/src/frontend/js/modules/session');
 require('./app.config');
 require('./app.run');
+require('../linagora.esn.controlcenter/app/app.module.js');
+require('../linagora.esn.profile/app/app.module.js');

@@ -14,12 +14,12 @@ describe('The profileEditController', function() {
     esnUserConfigurationServiceMock = { get: function() {} };
     esnConfigMock = sinon.stub();
 
-    module('linagora.esn.profile', function($provide) {
+    angular.mock.module('linagora.esn.profile', function($provide) {
       $provide.value('esnConfig', esnConfigMock);
       $provide.value('esnUserConfigurationService', esnUserConfigurationServiceMock);
     });
 
-    inject(function(_$rootScope_, _$controller_, _$q_, _$state_, _esnConfigApi_) {
+    angular.mock.inject(function(_$rootScope_, _$controller_, _$q_, _$state_, _esnConfigApi_) {
       $rootScope = _$rootScope_;
       $controller = _$controller_;
       $q = _$q_;
@@ -56,7 +56,7 @@ describe('The profileEditController', function() {
     var session;
 
     beforeEach(function() {
-      inject(function(_session_) {
+      angular.mock.inject(function(_session_) {
         session = _session_;
       });
     });
@@ -167,7 +167,7 @@ describe('The profileEditController', function() {
     var $state;
     var session, profileAPI, userAPI;
 
-    beforeEach(inject(function(
+    beforeEach(angular.mock.inject(function(
       _$state_,
       _session_,
       _profileAPI_,

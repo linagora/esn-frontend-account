@@ -1,13 +1,11 @@
-(function() {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.controlcenter')
+angular.module('linagora.esn.controlcenter')
 
-  .component('controlcenterGeneralSubheader', {
-    template: require("./subheader.pug"),
-    bindings: {
-      onFormSubmit: '&',
-      form: '<'
-    }
-  });
-})();
+.component('controlcenterGeneralSubheader', {
+  template: require("./subheader.pug"),
+  bindings: {
+    onFormSubmit: '&',
+    form: '<'
+  }
+});

@@ -1,12 +1,10 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.profile')
-    .component('profileEditEmail', {
-      template: require("./profile-edit-email.pug"),
-      controller: 'ProfileEditEmailController',
-      bindings: {
-        user: '='
-      }
-    });
-})(angular);
+angular.module('linagora.esn.profile')
+  .component('profileEditEmail', {
+    template: require("./profile-edit-email.pug"),
+    controller: 'ProfileEditEmailController',
+    bindings: {
+      user: '='
+    }
+  });

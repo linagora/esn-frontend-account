@@ -15,17 +15,18 @@ describe('The controlcenterGeneralController', function() {
       return action();
     });
 
-    module('linagora.esn.controlcenter');
-    module('esn.home-page');
-    module('esn.async-action');
+    angular.mock.module('ui.router');
+    angular.mock.module('linagora.esn.controlcenter');
+    angular.mock.module('esn.home-page');
+    angular.mock.module('esn.async-action');
 
-    module(function($provide) {
+    angular.mock.module(function($provide) {
       $provide.value('asyncAction', asyncAction);
     });
   });
 
   beforeEach(function() {
-    inject(function(_$window_, _$controller_, _$rootScope_, _esnUserConfigurationService_, _homePageService_, _CONTROLCENTER_GENERAL_CONFIGS_) {
+    angular.mock.inject(function(_$window_, _$controller_, _$rootScope_, _esnUserConfigurationService_, _homePageService_, _CONTROLCENTER_GENERAL_CONFIGS_) {
       $controller = _$controller_;
       $rootScope = _$rootScope_;
       esnUserConfigurationService = _esnUserConfigurationService_;

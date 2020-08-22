@@ -1,12 +1,9 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.controlcenter')
+angular.module('linagora.esn.controlcenter')
 
-    .run(function(dynamicDirectiveService, DynamicDirective) {
-      var profileMenuControlcenter = new DynamicDirective(true, 'profile-menu-controlcenter');
+  .run(function(dynamicDirectiveService, DynamicDirective) {
+    var profileMenuControlcenter = new DynamicDirective(true, 'profile-menu-controlcenter');
 
-      dynamicDirectiveService.addInjection('profile-menu-controlcenter', profileMenuControlcenter);
-    });
-
-})(angular);
+    dynamicDirectiveService.addInjection('profile-menu-controlcenter', profileMenuControlcenter);
+  });

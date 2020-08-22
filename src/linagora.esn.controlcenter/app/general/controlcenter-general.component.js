@@ -1,10 +1,8 @@
-(function() {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.controlcenter')
+angular.module('linagora.esn.controlcenter')
 
-  .component('controlcenterGeneral', {
-    template: require("./controlcenter-general.pug"),
-    controller: 'controlcenterGeneralController'
-  });
-})();
+.component('controlcenterGeneral', {
+  template: require("./controlcenter-general.pug"),
+  controller: 'controlcenterGeneralController'
+});

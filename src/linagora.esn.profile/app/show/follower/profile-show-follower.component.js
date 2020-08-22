@@ -1,12 +1,10 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.profile')
-    .component('profileShowFollower', {
-      template: require("./profile-show-follower.pug"),
-      controller: 'profileShowFollowerController',
-      bindings: {
-        user: '<'
-      }
-    });
-})(angular);
+angular.module('linagora.esn.profile')
+  .component('profileShowFollower', {
+    template: require("./profile-show-follower.pug"),
+    controller: 'profileShowFollowerController',
+    bindings: {
+      user: '<'
+    }
+  });
