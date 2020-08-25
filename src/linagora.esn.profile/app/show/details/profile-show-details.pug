@@ -10,6 +10,25 @@ sub-header
     .pmbb-view
       dl.dl-horizontal
         dt
+          i.mdi.mdi-account-circle.m-r-5
+          | {{ 'Picture' | translate }}
+        dd
+          .profile-overview
+            .po-card
+              .pmo-pic
+                .p-relative.po-card-image(ng-controller='avatarController')
+                  a
+                    esn-avatar(avatar-url="avatarURL", hide-user-status="true")
+                  a.edit-h(ng-controller='avatarEdit', href='', ng-click="showAvatarEditModal()", ng-if="::$ctrl.canEdit" )
+                    i.mdi.mdi-camera
+      dl.dl-horizontal
+        dt
+          i.mdi.mdi-account-box.m-r-5
+          | {{ 'Name' | translate }}
+        dd
+          user-profile-link.po-displayname.ellipsis(user="$ctrl.user")
+      dl.dl-horizontal
+        dt
           i.mdi.mdi-email.m-r-5
           | {{ 'Email' | translate }}
           dd(ng-repeat="email in $ctrl.user.emails track by $index")
