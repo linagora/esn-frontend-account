@@ -4,6 +4,7 @@ angular.module('esnApp', [
   'ui.router',
   'esn.header',
   'esn.websocket',
+  'esn.login',
   'esn.session'
 ])
   .config(function config($urlRouterProvider) {
@@ -14,6 +15,7 @@ angular.module('esnApp', [
 
 require('esn-frontend-common-libs/src/frontend/js/modules/websocket');
 require('esn-frontend-common-libs/src/frontend/js/modules/session');
+require('esn-frontend-common-libs/src/frontend/js/modules/login');
 require('./app.config');
 require('./app.run');
 require('../linagora.esn.controlcenter/app/app.module.js');
