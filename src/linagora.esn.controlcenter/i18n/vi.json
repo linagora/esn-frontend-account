@@ -1,5 +1,7 @@
 {
+  "Account": "Tài khoản",
+  "Configuration saved. Click on 'Reload' to apply changes": "Đã lưu cấu hình. Nhấp vào 'Tải lại' để áp dụng thay đổi",
   "General": "Chung",
   "Reload": "Tải lại",
-  "Configuration saved. Click on 'Reload' to apply changes": "Đã lưu cấu hình. Nhấp vào 'Tải lại' để áp dụng thay đổi"
+  "Settings": "Cài đặt"
 }

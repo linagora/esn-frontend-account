@@ -1,5 +1,7 @@
 {
+  "Account": "帐户",
   "Configuration saved. Click on 'Reload' to apply changes": "配置已保存。点击“重新加载”以应用更改",
   "General": "一般",
-  "Reload": "刷新"
+  "Reload": "刷新",
+  "Settings": "设定值"
 }

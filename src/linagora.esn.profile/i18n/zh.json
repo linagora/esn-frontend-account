@@ -15,5 +15,6 @@
   "Emails": "电子邮件",
   "Basic information": "基本信息",
   "Email is already in use. Try another.": "电子邮件已在使用中。 尝试另一个",
-  "Email is invalid": "电子邮件无效"
+  "Email is invalid": "电子邮件无效",
+  "Picture": "图片"
 }
