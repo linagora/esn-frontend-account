@@ -1,5 +1,7 @@
 {
+  "Account": "Account",
+  "Configuration saved. Click on 'Reload' to apply changes": "Configuration saved. Click on 'Reload' to apply changes",
   "General": "General",
   "Reload": "Reload",
-  "Configuration saved. Click on 'Reload' to apply changes": "Configuration saved. Click on 'Reload' to apply changes"
+  "Settings": "Settings"
 }
