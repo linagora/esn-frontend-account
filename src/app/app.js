@@ -5,7 +5,8 @@ angular.module('esnApp', [
   'esn.header',
   'esn.websocket',
   'esn.login',
-  'esn.session'
+  'esn.session',
+  'esn.material'
 ])
   .config(function config($urlRouterProvider) {
     $urlRouterProvider.otherwise(function () {
@@ -16,6 +17,7 @@ angular.module('esnApp', [
 require('esn-frontend-common-libs/src/frontend/js/modules/websocket');
 require('esn-frontend-common-libs/src/frontend/js/modules/session');
 require('esn-frontend-common-libs/src/frontend/js/modules/login');
+require('esn-frontend-common-libs/src/frontend/js/modules/material/material.module');
 require('./app.config');
 require('./app.run');
 require('../linagora.esn.controlcenter/app/app.module.js');
