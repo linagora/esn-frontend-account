@@ -7,6 +7,9 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(name="theme-color", content="#0C7CD5")
     script(src="/socket.io/socket.io.js")
-
+    style(type='text/css').
+      esn-search-header{
+        display: none;
+      }
   body.container-fluid.ng-cloak(ng-app="esnApp", ng-controller="sessionInitESNController", device-detector, ng-class="{ 'grabbable': esnIsDragging }")
     #wrap(ng-include='session.template')
