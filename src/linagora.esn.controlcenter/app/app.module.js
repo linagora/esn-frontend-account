@@ -33,7 +33,6 @@ require('./general/controlcenter-general.component.js');
 require('./general/controlcenter-general.constants.js');
 require('./general/controlcenter-general.controller.js');
 require('./general/subheader/subheader.js');
-require('./profile-menu-controlcenter/profile-menu-controlcenter.component.js');
 require('./sidebar/sidebar-menu-item.component.js');
 require('./sidebar/sidebar.component.js');
 require('./app.route.js');
