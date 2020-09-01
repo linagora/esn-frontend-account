@@ -45,7 +45,6 @@ require('./edit/form/profile-edit-form.component.js');
 require('./edit/profile-edit.component.js');
 require('./edit/profile-edit.controller.js');
 require('./edit/subheader/profile-edit-subheader.component.js');
-require('./profile-menu-profile/profile-menu-profile.component.js');
 require('./show/details/profile-show-details.component.js');
 require('./show/details/profile-show-details.controller.js');
 require('./show/details/subheader/profile-show-details-subheader.component.js');
