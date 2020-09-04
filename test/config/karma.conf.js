@@ -4,7 +4,7 @@ const webpackConfig = require('../../webpack.test');
 
 module.exports = function(config) {
   const singleRun = process.env.SINGLE_RUN !== 'false';
-    // We need a timeout of at least 10000ms or else the tests will sometimes randomly
+  // We need a timeout of at least 10000ms or else the tests will sometimes randomly
   // fail because they exceed the default 2000ms timeout. This will happen often in
   // the CI where the tests run slower than in our locals.
   const timeout = process.env.TEST_TIMEOUT || 10000;
@@ -30,7 +30,7 @@ module.exports = function(config) {
         base: 'Firefox',
         flags: ['--headless'],
         prefs: { 'network.proxy.type': 0 }
-      }    
+      }
     },
 
     proxies: {
@@ -52,6 +52,6 @@ module.exports = function(config) {
       'karma-sinon-chai'
     ],
 
-    coverageReporter: {type: 'text', dir: '/tmp'}
+    coverageReporter: { type: 'text', dir: '/tmp' }
   });
 };

@@ -2,6 +2,6 @@
 
 angular.module('linagora.esn.profile')
 
-.component('profileSidebar', {
-  template: require("./sidebar.pug")
-});
+  .component('profileSidebar', {
+    template: require('./sidebar.pug')
+  });

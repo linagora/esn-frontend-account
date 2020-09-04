@@ -2,5 +2,5 @@
 
 angular.module('linagora.esn.profile')
   .component('profileShowFollowerSubheader', {
-    template: require("./profile-show-follower-subheader.pug")
+    template: require('./profile-show-follower-subheader.pug')
   });

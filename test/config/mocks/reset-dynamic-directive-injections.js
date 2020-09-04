@@ -4,9 +4,9 @@
 
 angular
   .module('linagora.esn.tests.reset-dynamic-directive-injections', [
-    'op.dynamicDirective',
+    'op.dynamicDirective'
   ])
-  .config(function (dynamicDirectiveServiceProvider) {
+  .config(function(dynamicDirectiveServiceProvider) {
     dynamicDirectiveServiceProvider.resetAllInjections();
   });
 

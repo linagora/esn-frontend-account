@@ -1,6 +1,6 @@
 'use strict';
 
-require ('../../common/profile-api.service.js');
+require('../../common/profile-api.service.js');
 
 angular.module('linagora.esn.profile')
   .controller('profileShowDetailsController', profileShowDetailsController);

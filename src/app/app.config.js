@@ -2,7 +2,7 @@
 
 angular.module('esnApp')
   .config(function config($urlRouterProvider) {
-    $urlRouterProvider.otherwise(function () {
+    $urlRouterProvider.otherwise(function() {
       return '/profile';
     });
   })

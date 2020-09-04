@@ -1,7 +1,8 @@
 'use strict';
 
 const _ = require('lodash');
-require('../common/profile-api.service.js')
+
+require('../common/profile-api.service.js');
 
 angular.module('linagora.esn.profile')
   .controller('profileEditController', profileEditController);

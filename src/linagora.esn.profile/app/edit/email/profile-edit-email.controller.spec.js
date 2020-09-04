@@ -134,7 +134,7 @@ describe('The ProfileEditEmailController', function() {
         .then(done)
         .catch(done);
 
-        $rootScope.$digest();
+      $rootScope.$digest();
     });
 
     it('should reject if the email is taken by the current user', function(done) {

@@ -2,6 +2,6 @@
 
 angular.module('linagora.esn.controlcenter')
 
-.component('controlcenterSidebar', {
-  template: require("./sidebar.pug")
-});
+  .component('controlcenterSidebar', {
+    template: require('./sidebar.pug')
+  });
