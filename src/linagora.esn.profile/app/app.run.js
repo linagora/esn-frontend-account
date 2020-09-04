@@ -2,6 +2,6 @@ angular.module('linagora.esn.profile')
 
   .run(cacheTemplates);
 
-  function cacheTemplates($templateCache) {
-    $templateCache.put('/profile/app/sidebar/sidebar', require('../app/sidebar/sidebar.pug'));
-  };
+function cacheTemplates($templateCache) {
+  $templateCache.put('/profile/app/sidebar/sidebar', require('./sidebar/sidebar.pug'));
+}

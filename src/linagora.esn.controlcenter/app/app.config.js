@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('linagora.esn.controlcenter')
   .config(registerI18N);

@@ -2,7 +2,7 @@
 
 angular.module('linagora.esn.profile')
   .component('profileShowDetailsSubheader', {
-    template: require("./profile-show-details-subheader.pug"),
+    template: require('./profile-show-details-subheader.pug'),
     bindings: {
       showEditButton: '<'
     }

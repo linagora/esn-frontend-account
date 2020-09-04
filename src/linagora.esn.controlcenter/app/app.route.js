@@ -8,7 +8,7 @@ angular.module('linagora.esn.controlcenter')
     $stateProvider
       .state('controlcenter', {
         url: '/controlcenter',
-        template: require("./app.pug")
+        template: require('./app.pug')
       })
       .state('controlcenter.general', {
         url: '/general',

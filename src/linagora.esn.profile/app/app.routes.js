@@ -8,9 +8,9 @@ angular.module('linagora.esn.profile')
     $stateProvider
       .state('profile', {
         url: '/profile/:user_id?',
-        template: require("./app.pug"),
+        template: require('./app.pug'),
         controller: 'profileController',
-        params: {user_id: {value: null, squash: true}},
+        params: { user_id: { value: null, squash: true } },
         resolve: {
           user: function($stateParams, $location, userAPI, session) {
             return session.ready.then(function(session) {
@@ -80,12 +80,12 @@ angular.module('linagora.esn.profile')
           }
         }
       })
-       .state('profile.details.identities', {
-         url: '/identities',
-         views: {
-           'details@profile.details': {
-             template: '<inbox-identities user="user" />'
-           }
-         }
-       });
+      .state('profile.details.identities', {
+        url: '/identities',
+        views: {
+          'details@profile.details': {
+            template: '<inbox-identities user="user" />'
+          }
+        }
+      });
   });

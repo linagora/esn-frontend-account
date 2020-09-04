@@ -2,7 +2,7 @@
 
 angular.module('linagora.esn.profile')
   .component('profileEditForm', {
-    template: require("./profile-edit-form.pug"),
+    template: require('./profile-edit-form.pug'),
     bindings: {
       user: '=',
       canEditEmails: '<',

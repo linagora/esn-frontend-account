@@ -76,7 +76,7 @@ describe('The controlcenterGeneralController', function() {
   });
 
   it('should get a list homePages with keys are sorted', function() {
-    var homePages = { a: 'a', f: 'f', b: 'b'};
+    var homePages = { a: 'a', f: 'f', b: 'b' };
     var expectResult = { a: 'a', b: 'b', f: 'f' };
 
     esnUserConfigurationService.get = function() { return $q.when([]); };

@@ -9,7 +9,7 @@ angular.module('esnApp', [
   'esn.material'
 ])
   .config(function config($urlRouterProvider) {
-    $urlRouterProvider.otherwise(function () {
+    $urlRouterProvider.otherwise(function() {
       return '/profile';
     });
   });

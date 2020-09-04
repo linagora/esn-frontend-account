@@ -15,8 +15,8 @@ function controlcenterGeneralController(
   CONTROLCENTER_GENERAL_CONFIGS
 ) {
   var self = this,
-      saveHandlers = [_saveConfiguration],
-      initialConfigs;
+    saveHandlers = [_saveConfiguration],
+    initialConfigs;
   var HOMEPAGE_KEY = 'homePage';
 
   self.$onInit = $onInit;

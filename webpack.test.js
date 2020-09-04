@@ -13,7 +13,7 @@ module.exports = merge(commonWebpackConfig, {
   devtool: 'source-map',
   output: {
     filename: 'bundle-test.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new webpack.NormalModuleReplacementPlugin(
@@ -23,7 +23,7 @@ module.exports = merge(commonWebpackConfig, {
     new webpack.ProvidePlugin({
       chai: chaiPath,
       _: lodashPath
-    }),
+    })
   ],
   module: {
     rules: [
@@ -32,8 +32,8 @@ module.exports = merge(commonWebpackConfig, {
         loader: 'ignore-loader',
         include: [
           path.resolve(__dirname, 'node_modules/esn-frontend-common-libs/src/frontend/js/modules/i18n/i18n.run.js')
-        ],
-      },
-    ],
+        ]
+      }
+    ]
   }
 });

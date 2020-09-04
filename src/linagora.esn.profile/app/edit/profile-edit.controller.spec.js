@@ -30,7 +30,7 @@ describe('The profileEditController', function() {
     $state.params.user_id = 'a';
     esnConfigMock.returns($q.when({ profileProvisionedFields: profileProvisionedFields }));
     esnUserConfigurationServiceMock.get = sinon.stub().returns($q.when([
-      { value: { profileProvisionedFields: profileProvisionedFields }}
+      { value: { profileProvisionedFields: profileProvisionedFields } }
     ]));
     esnConfigApi.getDomainConfigurations = sinon.stub().returns($q.when([{
       name: 'core',

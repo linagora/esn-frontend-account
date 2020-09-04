@@ -2,7 +2,7 @@
 
 angular.module('linagora.esn.profile')
   .component('profileOverview', {
-    template: require("./profile-overview.pug"),
+    template: require('./profile-overview.pug'),
     controller: 'profileOverviewController',
     bindings: {
       user: '<',
