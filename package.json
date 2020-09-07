@@ -17,7 +17,7 @@
     "dotenv-webpack": "^2.0.0",
     "esn-frontend-common-libs": "openpaas-suite/esn-frontend-common-libs#main",
     "esn-frontend-mailto-handler": "github:openpaas-suite/esn-frontend-mailto-handler#main",
-    "esn-frontend-account-inbox": "github:OpenPaaS-Suite/esn-frontend-account-inbox#master"
+    "esn-frontend-account-inbox": "github:openpaas-suite/esn-frontend-account-inbox#main"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
