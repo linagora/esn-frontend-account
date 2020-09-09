@@ -45,4 +45,10 @@ describe('The profileController', function() {
     expect(controller.canEdit).to.be.true;
     expect(profileHelpersService.canEdit).to.have.been.calledWith(userMock);
   });
+
+  it('should set $scope.user to current user on init controller', function() {
+    var controller = initController();
+
+    expect($scope.user).to.equal(controller.user);
+  });
 });
