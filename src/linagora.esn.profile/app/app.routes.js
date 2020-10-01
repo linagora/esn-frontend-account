@@ -56,30 +56,6 @@ angular.module('linagora.esn.profile')
           }
         }
       })
-      .state('profile.details.followers', {
-        url: '/followers',
-        views: {
-          'details@profile.details': {
-            template: '<profile-show-follower user="user" />'
-          }
-        }
-      })
-      .state('profile.details.followings', {
-        url: '/followings',
-        views: {
-          'details@profile.details': {
-            template: '<profile-show-following user="user" />'
-          }
-        }
-      })
-      .state('profile.details.timeline', {
-        url: '/timeline',
-        views: {
-          'details@profile.details': {
-            template: '<profile-show-timeline />'
-          }
-        }
-      })
       .state('profile.details.identities', {
         url: '/identities',
         views: {
