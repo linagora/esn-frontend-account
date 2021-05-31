@@ -98,6 +98,8 @@ module.exports = {
     contentBasePublicPath: [BASE_HREF, '/login'],
     publicPath: '/account/',
     compress: true,
+    host: '0.0.0.0',
+    disableHostCheck: true,
     port: 9900,
     proxy: [{
       context: [
