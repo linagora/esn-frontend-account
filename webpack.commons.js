@@ -97,6 +97,7 @@ module.exports = {
     contentBasePublicPath: ['/login'],
     host: '0.0.0.0',
     disableHostCheck: true,
+    historyApiFallback: true,
     compress: true,
     port: 9900
   },
