@@ -15,8 +15,7 @@ const pugLoaderOptions = {
   root: `${__dirname}/node_modules/esn-frontend-common-libs/src/frontend/views`
 };
 
-const BASE_HREF = process.env.BASE_HREF || '/';
-const OPENPAAS_URL = process.env.OPENPAAS_URL || 'http://localhost:8080';
+const BASE_HREF = process.env.BASE_HREF || '/account/';
 
 module.exports = {
   mode: 'development',
@@ -25,7 +24,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/account/'
+    publicPath: BASE_HREF
   },
   resolve: {
     alias: {
@@ -94,41 +93,13 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: [path.join(__dirname, 'dist'), path.resolve(__dirname, 'node_modules', 'esn-frontend-login', 'dist')],
-    contentBasePublicPath: [BASE_HREF, '/login'],
-    publicPath: '/account/',
-    compress: true,
+    contentBase: [path.resolve(__dirname, 'node_modules', 'esn-frontend-login', 'dist')],
+    contentBasePublicPath: ['/login'],
     host: '0.0.0.0',
     disableHostCheck: true,
-    port: 9900,
-    proxy: [{
-      context: [
-        '/auth',
-        '/api',
-        '/login',
-        '/views',
-        '/account/api',
-        '/profile/app',
-        '/controlcenter/app',
-        '/images',
-        '/socket.io/',
-        '/user-status/app/bubble/',
-        '/user-status/api',
-        '/contact/app',
-        '/contact/images',
-        '/dav/api',
-        '/unifiedinbox/views',
-        '/unifiedinbox/app',
-        '/unifiedinbox/api',
-        '/calendar/app',
-        '/linagora.esn.resource/api'
-      ],
-      target: OPENPAAS_URL,
-      disableHostCheck: true,
-      secure: false,
-      changeOrigin: true,
-      withCredentials: true
-    }]
+    historyApiFallback: true,
+    compress: true,
+    port: 9900
   },
   module: {
     rules: [
