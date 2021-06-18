@@ -97,7 +97,9 @@ module.exports = {
     contentBasePublicPath: ['/login'],
     host: '0.0.0.0',
     disableHostCheck: true,
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: BASE_HREF + 'index.html'
+    },
     compress: true,
     port: 9900
   },
