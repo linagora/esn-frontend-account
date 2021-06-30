@@ -32,7 +32,7 @@
     "chai-datetime": "1.5.0",
     "chai-shallow-deep-equal": "1.4.6",
     "clean-webpack-plugin": "^3.0.0",
-    "compression-webpack-plugin": "^8.0.1",
+    "compression-webpack-plugin": "6.1.1",
     "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^3.6.0",
     "dotenv-webpack": "^2.0.0",
