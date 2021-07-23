@@ -16,7 +16,7 @@ sub-header
           .profile-overview
             .po-card
               .pmo-pic
-                .p-relative.po-card-image(ng-controller='avatarController')
+                .p-relative.po-card-image
                   a
                     esn-avatar(avatar-url="$ctrl.avatarUserURL", hide-user-status="true")
                   a.edit-h(ng-controller='avatarEdit', href='', ng-click="showAvatarEditModal()", ng-if="::$ctrl.canEdit" )
