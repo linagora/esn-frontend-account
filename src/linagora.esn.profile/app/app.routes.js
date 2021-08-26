@@ -63,5 +63,12 @@ angular.module('linagora.esn.profile')
             template: '<inbox-identities user="user" />'
           }
         }
+      })
+      .state('home', {
+        onEnter: function($state, $timeout) {
+          $timeout(() => {
+            $state.go('profile');
+          });
+        }
       });
   });
