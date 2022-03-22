@@ -19,29 +19,29 @@ Tải [OpenPaaS add-on for Thunderbird](/account/downloads/thunderbird/op-tb-aut
 
 1. Nếu bạn chưa từng thiết lập bất cứ địa chỉ thư điện tử nào trước đó, Thunderbird sẽ xuất ra một màn hình khởi động như hình.
 
-    ![create_address](/account/images/en/thunderbird_create_address.png)
+    ![create_address](/account/assets/images/en/thunderbird_create_address.png)
 
 2. Nhấn vào `Cancel`.
 
 3. Chọn vào biểu tượng menu như hình.
 
-    ![open_menu](/account/images/en/thunderbird_open_menu.png)
+    ![open_menu](/account/assets/images/en/thunderbird_open_menu.png)
 
 4. Nhấn vào `Add-ons`.
 
 5. Trong phần quản lý add-ons, chọn `Extensions` ở phía trái có hình bánh răng.
 
-    ![modules_menu](/account/images/en/thunderbird_modules_menu.png)
+    ![modules_menu](/account/assets/images/en/thunderbird_modules_menu.png)
 
 6. Cuối cùng, nhấn vào `Install Add-on From File...` để chọn mục OpenPaaS add-on mà bạn đã tải trước đó, đợi cho đến nút `Install` đếm ngược tới 0. Sau đó chọn `Install Now`.
 
-    ![install_countdown](/account/images/en/thunderbird_install_now.png)
+    ![install_countdown](/account/assets/images/en/thunderbird_install_now.png)
 
 7. ThunderBird sẽ cần khởi động lại, chọn `Restart now`.
 
 8. Lúc khởi động, cửa sổ dưới đây sẽ đề nghị bạn đăng nhập vào OpenPaaS.
 
-    ![enter_account](/account/images/en/thunderbird_enter_account.png)
+    ![enter_account](/account/assets/images/en/thunderbird_enter_account.png)
 
 9. Thunderbird khởi động và hỏi lần nữa nếu bạn muốn thiết lập lại các tài khoản thư điện tử đã tồn tại trước đó. Chọn `Cancel`. Phần mềm sẽ trải qua hai lần restart, đề nghị bạn đăng nhập lại vào. Hãy nhớ rằng bạn có thể chọn ô `Save your credentials` để tránh việc lặp lại điều này. 
 

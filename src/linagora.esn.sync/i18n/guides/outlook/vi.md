@@ -8,29 +8,29 @@
 
 1. Đầu tiên, bạn cần mở Outlook 2016, nháy đúp và biểu tượng như hình.
 
-    ![The outlook icon](/account/images/en/windows_home_outlook.png)
+    ![The outlook icon](/account/assets/images/en/windows_home_outlook.png)
 
 2. Ở góc trái, Chọn `File`.
 
-    ![The *File* tap](/account/images/en/windows_setup_outlook_account_0.png)
+    ![The *File* tap](/account/assets/images/en/windows_setup_outlook_account_0.png)
 
 3. Chọn `Add Account`.
 
-    ![Add Account](/account/images/en/windows_setup_outlook_account_1.png)
+    ![Add Account](/account/assets/images/en/windows_setup_outlook_account_1.png)
 
 4. Tại cửa sổ  mới hiện ra, nhập tài khoản thư điện tử của bạn và chọn `Connect`.
 
-    ![Email address field](/account/images/en/windows_setup_outlook_account_2.png)
+    ![Email address field](/account/assets/images/en/windows_setup_outlook_account_2.png)
 
 5. Nhập mật khẩu OpenPass và chọn `Connect`.
 
-    ![Password field](/account/images/en/windows_setup_outlook_account_3.png)
+    ![Password field](/account/assets/images/en/windows_setup_outlook_account_3.png)
 
 6. Đợi cho đến khi có thông baó thành công `Account setup is complete` và click vào `Ok`. Chúc mừng! Bạn đã có thể gửi và nhận email trong Outlook.
 
-    ![Processing your request](/account/images/en/windows_setup_outlook_account_4.png)
+    ![Processing your request](/account/assets/images/en/windows_setup_outlook_account_4.png)
 
-    ![Your account setup is now complete!](/account/images/en/windows_setup_outlook_account_5.png)
+    ![Your account setup is now complete!](/account/assets/images/en/windows_setup_outlook_account_5.png)
 
 ## Đồng bộ lịch
 
@@ -42,37 +42,37 @@
 
 1. Đầu tiên, mở bất kỳ trình duyệt web Firefox, Chrome, hoặc Internet Explorer.
 
-    ![Firefox shortcut](/account/images/en/windows_firefox_shortcut.png)
+    ![Firefox shortcut](/account/assets/images/en/windows_firefox_shortcut.png)
 
 2. Trong thanh địa chỉ, chép lại hoặc copy & paste địa chỉ sau, nhấn *Enter*: `https://caldavsynchronizer.org/`.
 
-    ![URL address](/account/images/en/windows_install_caldavsynchronizer_2.png)
+    ![URL address](/account/assets/images/en/windows_install_caldavsynchronizer_2.png)
 
 3. Tìm mục `Download` ở phía trên, kích chuột vào hình chữ nhật màu xanh có chữ `Download [...]`, một cửa sổ windown sẽ hiện ra.
 
-    ![Download section](/account/images/en/windows_install_caldavsynchronizer_3.png)
+    ![Download section](/account/assets/images/en/windows_install_caldavsynchronizer_3.png)
 
 4. Chọn `Ok`.
 
-    ![File explorer](/account/images/en/windows_install_caldavsynchronizer_4.png)
+    ![File explorer](/account/assets/images/en/windows_install_caldavsynchronizer_4.png)
 
 5.  Khi tải xong `CalDavSynchronizer.Setup.msi`, một thông báo cài đặt hiện ra.
 
-    ![File explorer](/account/images/en/windows_install_caldavsynchronizer_5.png)
+    ![File explorer](/account/assets/images/en/windows_install_caldavsynchronizer_5.png)
 
 5. Chọn `Next` và `Next`.
 
-    ![Installer: first step](/account/images/en/windows_install_caldavsynchronizer_6.png)
+    ![Installer: first step](/account/assets/images/en/windows_install_caldavsynchronizer_6.png)
 
-    ![Installer: second step](/account/images/en/windows_install_caldavsynchronizer_7.png)
+    ![Installer: second step](/account/assets/images/en/windows_install_caldavsynchronizer_7.png)
 
 7. Một cử a sổ mới hiện ra với câu hỏi: `Do you want to allow this to make changes to your device?`. Chọn `Yes`.
 
-    ![Changes to your device](/account/images/en/windows_install_caldavsynchronizer_8.png)
+    ![Changes to your device](/account/assets/images/en/windows_install_caldavsynchronizer_8.png)
 
 8. Một khi quá trình cài đặt hoàn tất, chọn `Close`. Chúc mừng!!! Cal Dav Synchronizer đã cài đặt thành công.
 
-    ![Done with the installation](/account/images/en/windows_install_caldavsynchronizer_9.png)
+    ![Done with the installation](/account/assets/images/en/windows_install_caldavsynchronizer_9.png)
 
 ### Thiết lập một tài khoản lịch với CalDav Synchronizer
 
@@ -80,32 +80,32 @@ Cal Dav Synchronizer đã được cài đặt. Bạn đã có thể liên kết
 
 1. Đầu tiên, nháy đúp vào biểu tượng Outlook 2016.
 
-    ![The outlook icon](/account/images/en/windows_home_outlook.png)
+    ![The outlook icon](/account/assets/images/en/windows_home_outlook.png)
 
 2. Đi đến tab `CalDav Synchronizer`. Các tùy chọn sẽ xuất hiện, chọn `Sychronization Profiles`.
 
-    ![Outlook CalDav](/account/images/en/windows_setup_caldavsynchronizer_1.png)
+    ![Outlook CalDav](/account/assets/images/en/windows_setup_caldavsynchronizer_1.png)
 
 3. Chọn biểu tượng **dấu cộng** . Trong cửa sổ mới, rời khỏi thiết lập mặc định và nhấn `OK`.
 
 4. Chọn tên cho profile của bạn, chọn cái tên phù hợp với tên của Lịch mà bạn muốn đồng bộ với Outlook. Ở hình dưới, tên được chọn là `My OpenPaaS main calendar`. Dưới `Outlook Settings`, ở cuối `Outlook folder`, Chọn **...**. Chọn `New...`. Một cử a sổ nhỏ sẽ xuất hiện. Dưới mục `Folder contains`, chọn `Calendar Items`. Chọn folder bạn muốn lưu lịch, và nhấn `Ok`.
 *Mục `Synchronize items imediately after change` có thể được chọn.*
 
-    ![How to sync](/account/images/en/windows_setup_caldavsynchronizer_2.png)
+    ![How to sync](/account/assets/images/en/windows_setup_caldavsynchronizer_2.png)
 
 5. Dưới phần `Server Settings` , điền vào `DAV URL`. Nên trùng với tên domain và gõ thêm `/sdav/`.
-        * - **DAV URL**: `<%= user.preferredEmail %>`/sdav/
-        * - **Username**: `<%= user.preferredEmail %>`
+        * - **DAV URL**: `user.preferredEmail`/sdav/
+        * - **Username**: `user.preferredEmail`
         * - **Password**: Mật khẩu *OpenPaaS*
-        * - **Email address**: `<%= user.preferredEmail %>`
+        * - **Email address**: `user.preferredEmail`
         * Một khi hoàn thành, chọn `OK` ở phía dưới góc phải của cử a sổ .
 
-    ![Done with your settings](/account/images/en/windows_setup_caldavsynchronizer_3.png)
+    ![Done with your settings](/account/assets/images/en/windows_setup_caldavsynchronizer_3.png)
 
 6. Một cửa sổ sẽ mở ra để bạn chọn nơi mà lịch Outlook sẽ được đồng bộ. Chọn mẫu lịch và ấn `OK`. Tại cửa sổ khác, tiếp tục chọn `OK`.
 
-    ![The calendar to sync](/account/images/en/windows_setup_caldavsynchronizer_4.png)
+    ![The calendar to sync](/account/assets/images/en/windows_setup_caldavsynchronizer_4.png)
 
 7. Xong, Outlook giờ đã đồng bộ với lịch OpenPaaS! Bạn đã có thể sử dụng lịch của bạn thông qua chức năng lịch trên Outlook.
 
-    ![Calendar in Outlook](/account/images/en/windows_setup_caldavsynchronizer_5.png)
+    ![Calendar in Outlook](/account/assets/images/en/windows_setup_caldavsynchronizer_5.png)

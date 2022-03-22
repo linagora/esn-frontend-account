@@ -19,29 +19,29 @@ Téléchargez l'extension [OpenPaaS pour Thunderbird](/account/downloads/thunder
 
 1. Au démarrage de Thunderbird, si vous n'avez jamais pas d'adresse électronique configurée, l'écran suivant devrait s'afficher.
 
-    ![create_address](/account/images/fr/thunderbird_create_address.png)
+    ![create_address](/account/assets/images/fr/thunderbird_create_address.png)
 
 2. Cliquez sur `Annuler`.
 
 3. Cliquez sur l'icône de menu comme indiqué ci-dessous.
 
-    ![open_menu](/account/images/fr/thunderbird_open_menu.png)
+    ![open_menu](/account/assets/images/fr/thunderbird_open_menu.png)
 
 4. Puis cliquez sur `Modules complémentaires`.
 
 5. Dans l'écran de gestion des modules complémentaires, cliquez sur `Extensions` dans la colonne de gauche, puis sur l'icône d'engrenage.
 
-    ![modules_menu](/account/images/fr/thunderbird_modules_menu.png)
+    ![modules_menu](/account/assets/images/fr/thunderbird_modules_menu.png)
 
 6. Enfin, cliquez sur `Installer un module depuis un fichier...` afin de sélectionner le fichier d'extension téléchargé précédemment. Sur l'écran suivant, attendez la fin du décompte du bouton `Installer` puis cliquez sur `Installez maintenant`.
 
-    ![install_countdown](/account/images/fr/thunderbird_install_now.png)
+    ![install_countdown](/account/assets/images/fr/thunderbird_install_now.png)
 
 7. Thunderbird vous demandera alors de redémarrer. Cliquez sur `Redémarrer maintenant`.
 
 8. Au redémarrage, la fenêtre suivante vous demande votre compte et mot de passe OpenPaaS.
 
-    ![enter_account](/account/images/fr/thunderbird_enter_account.png)
+    ![enter_account](/account/assets/images/fr/thunderbird_enter_account.png)
 
 9. Thunderbird s'ouvre et vous demande à nouveau si vous voulez configurer une adresse électronique existante. Cliquez `Annuler`. Un second redémarrage s'effectue alors, vous demandant à nouveau vos compte et mot de passe OpenPaaS. Pensez à cocher la case `Enregistrer mon mot de passe` si vous ne souhaitez pas l'entrer à chaque démarrage du logiciel.
 
