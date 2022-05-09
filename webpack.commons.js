@@ -63,10 +63,6 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'assets', 'images'),
-          to: 'images'
-        },
-        {
           from: path.resolve(__dirname, 'node_modules', 'openpaas-auth-client', 'src', 'assets'),
           to: 'auth'
         },
@@ -93,6 +89,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'env', 'openpaas.js'),
           to: 'env'
+        },
+        {
+          from: path.resolve(__dirname, 'src', 'linagora.esn.sync', 'images'),
+          to: 'images'
         }
       ]
     })

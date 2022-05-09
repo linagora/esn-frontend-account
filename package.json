@@ -15,10 +15,10 @@
   "license": "AGPLv3",
   "dependencies": {
     "dotenv-webpack": "^2.0.0",
+    "esn-frontend-account-inbox": "github:linagora/esn-frontend-account-inbox#main",
     "esn-frontend-common-libs": "github:linagora/esn-frontend-common-libs#main",
     "esn-frontend-mailto-handler": "github:linagora/esn-frontend-mailto-handler#main",
-    "esn-frontend-account-inbox": "github:linagora/esn-frontend-account-inbox#main",
-    "showdown": "^2.0.3"
+    "showdown": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
