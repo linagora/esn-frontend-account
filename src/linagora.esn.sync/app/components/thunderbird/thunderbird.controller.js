@@ -14,7 +14,7 @@ angular.module('linagora.esn.sync')
     function $onInit() {
       const converter = new showdown.Converter();
 
-      +markdownRendererService.getDefaultLanguage().then(language => {
+      markdownRendererService.getDefaultLanguage().then(language => {
         const markdownFile = require(`!!html-loader!../../../i18n/guides/thunderbird/${language}.md`);
 
         $scope.html = converter.makeHtml(markdownFile);

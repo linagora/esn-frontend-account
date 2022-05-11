@@ -22,4 +22,3 @@ angular.module('linagora.esn.sync')
       });
     }
   });
-

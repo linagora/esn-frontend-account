@@ -4,14 +4,11 @@ angular.module('linagora.esn.sync')
   .factory('markdownRendererService', markdownRendererService);
 
 function markdownRendererService(esnConfig, session, esnUserConfigurationService) {
-  var service = {
-    getDefaultLanguage: getDefaultLanguage,
-    getUserConfigurations: getUserConfigurations
+  return {
+    getDefaultLanguage,
+    getUserConfigurations
   };
 
-  return service;
-
-  //TO DO
   function getUserConfigurations() {
 
     const userId = session.user._id;
